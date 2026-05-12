@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px 15px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* ─── Card ─── */
+.todo-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+/* ─── Header ─── */
+.todo-header {
+    background: linear-gradient(135deg, #000047 0%, #0d0d6b 100%);
+    padding: 28px 24px;
+    text-align: center;
+}
+
+.todo-header h1 {
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.todo-header p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+/* ─── Body ─── */
+.todo-body {
+    padding: 24px 20px;
+}
+
+/* ─── Input Section ─── */
+.input-group .form-control {
+    border: 2px solid #e2e8f0;
+    border-right: none;
+    border-radius: 10px 0 0 10px !important;
+    font-size: 1rem;
+    padding: 10px 14px;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.2s;
+    height: 46px;
+}
+
+.input-group .form-control:focus {
+    border-color: #000047;
+    box-shadow: none;
+}
+
+.input-group .form-control::placeholder {
+    color: #a0aec0;
+}
+
+#btn {
+    background: linear-gradient(135deg, #000047 0%, #0d0d6b 100%);
+    border: none;
+    border-radius: 0 10px 10px 0 !important;
+    padding: 10px 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    height: 46px;
+    transition: opacity 0.2s, transform 0.1s;
+    white-space: nowrap;
+}
+
+#btn:hover {
+    opacity: 0.88;
+    transform: scale(1.02);
+    color: white;
+}
+
+#btn:active {
+    transform: scale(0.97);
+}
+
+/* ─── Section Title ─── */
+.section-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4a5568;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 22px 0 12px;
+}
+
+.badge-count {
+    background: #000047;
+    color: white;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+
+/* ─── Divider ─── */
+.todo-divider {
+    border: none;
+    border-top: 2px solid #f0f0f5;
+    margin: 0 0 8px;
+}
+
+/* ─── Empty State ─── */
+.empty-state {
+    text-align: center;
+    padding: 36px 20px;
+    color: #a0aec0;
+}
+
+.empty-icon {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.empty-state p {
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* ─── Task List ─── */
+#unOrderList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ─── Task Item ─── */
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: #f8f9ff;
+    border: 1.5px solid #e8eaf6;
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.2s, transform 0.15s;
+    animation: slideIn 0.25s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.list:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 71, 0.1);
+    transform: translateY(-1px);
+}
+
+/* ─── Checkbox + Text ─── */
+.text-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: #000047;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.task-text {
+    font-size: clamp(0.9rem, 2.5vw, 1.05rem);
+    font-weight: 500;
+    color: #2d3748;
+    word-break: break-word;
+    line-height: 1.4;
+}
+
+.task-text.completed {
+    text-decoration: line-through;
+    color: #a0aec0;
+}
+
+/* ─── Action Buttons ─── */
+.edit-delete {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+/* ─── Image Buttons (your custom images) ─── */
+.edit-btn,
+.delete-btn {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 26px 26px;
+    transition: transform 0.15s, background-color 0.2s;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.edit-btn {
+    background-image: url('edit-img.jpg');
+    background-color: #fffbeb;
+}
+
+.edit-btn:hover {
+    background-color: #fef3c7;
+    transform: scale(1.12);
+}
+
+.delete-btn {
+    background-image: url('bin-img.png');
+    background-color: #fff1f2;
+}
+
+.delete-btn:hover {
+    background-color: #fecaca;
+    transform: scale(1.12);
+}
+
+/* ─── Mobile Tweaks ─── */
+@media (max-width: 480px) {
+    .todo-body {
+        padding: 16px 12px;
+    }
+
+    #btn {
+        padding: 10px 14px;
+        font-size: 0.88rem;
+    }
+
+    .edit-btn,
+    .delete-btn {
+        width: 34px;
+        height: 34px;
+        background-size: 22px 22px;
+    }
+
+    .list {
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .todo-header h1 {
+        font-size: 1.4rem;
+    }
+}
