@@ -3,8 +3,11 @@ A clean, responsive To-Do List web application built with vanilla JavaScript and
 
 🌐 Live Demo
 
-Open to-do-list.html directly in any browser — no server needed!
+## Live Demo
 
+## Live Demo
+
+🔗 [Open Website](https://ismailhussainx0.github.io/to-do-list/)
 
 ✨ Features
 
@@ -20,7 +23,7 @@ Open to-do-list.html directly in any browser — no server needed!
 
 
 🛠️ Tech Stack
-TechnologyUsageHTML5StructureCSS3Styling & animationsJavaScript (Vanilla)App logicBootstrap 5.3Responsive layoutGoogle Fonts (Poppins)Typography
+TechnologyUsageHTML5StructureCSS3Styling & JavaScript (Vanilla)App logicBootstrap 5.3 Responsive layoutGoogle Fonts (Poppins)Typography
 
 📁 Project Structure
 📁 responsive-to-do-list/
