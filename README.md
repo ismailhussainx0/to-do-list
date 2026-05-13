@@ -24,8 +24,6 @@ A clean, responsive To-Do List web application built with vanilla JavaScript and
 
 🛠️ Tech Stack
 TechnologyUsageHTML5StructureCSS3Styling & JavaScript (Vanilla)App logicBootstrap 5.3 Responsive layoutGoogle Fonts (Poppins)Typography
-
-📁 Project Structure
 📁 responsive-to-do-list/
 ├── 📄 to-do-list.html      # Main HTML file
 ├── 🎨 style.css            # All styles
