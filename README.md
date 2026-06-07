@@ -30,3 +30,6 @@ TechnologyUsageHTML5StructureCSS3Styling & JavaScript (Vanilla)App logicBootstra
 ├── ⚙️ script.js            # JavaScript logic
 ├── 🖼️ edit-img.jpg         # Edit button icon
 └── 🖼️ bin-img.png          # Delete button icon
+
+## Author
+**Muhammad Ismail** — [Portfolio](https://ismailhussainx0.github.io/Portfolio-Website/) | [LinkedIn](https://www.linkedin.com/in/ismail-hussainx0/)
